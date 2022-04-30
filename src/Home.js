@@ -24,16 +24,18 @@ class Home extends Component {
             </div>
             <p className="lead" style={biggerLead}>
               This simple app creates meetings, allows people to check in, and
-              picks random users to award giveaways. It's a good example of a
-              Single Page Application which includes connection to a database
-              and routing. It's a practical way to learn{" "}
+              picks random users to award giveaways. Has an Admin function based on the the Id of each Attendee. The Admin can delete attendees from the meeting.The Admin can also send direct emails to the attendees based on the current users emails
+              He can give Each Attendee a Star Rating.Filter and Search for the attendee he wants. 
+             
+              
+              {/* and routing. It's a practical way to learn{" "}
               <a href="https://reactjs.org/">React</a> with{" "}
-              <a href="https://firebase.google.com">Firebase</a>.
+              <a href="https://firebase.google.com">Firebase</a>. */}
             </p>
 
             {user == null && (
               <span>
-                <Link to="/register" className="btn btn-outline-primary mr-2">
+                <Link to="/register" className="btn btn-outline-primary mr-2">  
                   Register
                 </Link>
                 <Link to="/login" className="btn btn-outline-primary mr-2">
